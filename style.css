@@ -1,0 +1,123 @@
+/* 基本色・余白：ここを変更するとサイト全体の印象を調整できます。 */
+:root{--ink:#20221f;--paper:#faf9f6;--red:#94352c;--line:#d9d9d1;--serif:'Yu Mincho','Hiragino Mincho ProN','Noto Serif JP',serif;--sans:'Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.9 var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button,a,input,select,textarea,summary{-webkit-tap-highlight-color:transparent}button,summary{cursor:pointer}button{color:inherit}a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--red);outline-offset:5px}img{max-width:100%;display:block}h1,h2,h3,p,figure{margin:0}h1,h2,h3{font-family:var(--serif);font-weight:500}h2{font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.7;letter-spacing:.1em}h3{font-size:1.25rem}p{overflow-wrap:anywhere}.header{height:100px;padding:0 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:var(--paper);position:relative;z-index:10}.brand{display:flex;gap:15px;align-items:center;font:600 25px/1.4 var(--serif);letter-spacing:.16em}.brand small{display:block;font:9px/2 var(--sans);letter-spacing:.18em}.seal{display:grid;place-items:center;border:1px solid var(--red);background:var(--red);color:var(--paper);font:26px var(--serif);width:42px;height:46px}.header nav{display:flex;gap:32px;align-items:center;font-size:14px}.header nav a{padding:10px 0}.header nav a:hover{color:var(--red)}.nav-contact{border-bottom:1px solid var(--ink)}.nav-contact span{margin-left:25px}.menu-toggle{display:none}.hero{padding:24px 5% 0;min-height:660px;height:calc(100svh - 100px);max-height:920px;display:flex;flex-direction:column}.hero-overline,.hero-bottom{display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:.13em}.hero-overline{color:#696b63}.hero-stage{display:grid;grid-template-columns:1fr 1.25fr 1fr;max-width:1200px;width:100%;margin:auto;align-items:center;padding:30px 0;min-height:0;flex:1}.vertical-note{writing-mode:vertical-rl;justify-self:center;font-family:var(--serif);letter-spacing:.28em;line-height:2.4;font-size:15px}.hero-art{position:relative;display:flex;align-items:center;justify-content:center;height:100%;max-height:570px;min-height:300px}.hero-art img{height:100%;max-height:520px;width:auto;max-width:100%;object-fit:contain;mix-blend-mode:multiply;animation:ink-in 1.5s ease both}.art-seal{position:absolute;bottom:9%;right:16%;writing-mode:vertical-rl;color:var(--red);border:1px solid var(--red);font:14px/1.2 var(--serif);padding:5px 3px;letter-spacing:.12em}.hero-copy{padding-left:32px;animation:copy-in 1.2s .15s ease both}.eyebrow{display:block;font:12px/1.8 var(--sans);letter-spacing:.17em;margin-bottom:22px}.hero h1{font-size:clamp(3.4rem,5.3vw,5.4rem);letter-spacing:.14em;line-height:1.5;margin:12px 0 24px;white-space:nowrap}.hero-copy p{font-size:14px;line-height:2}.text-link{display:inline-flex;align-items:center;gap:38px;border-bottom:1px solid var(--ink);padding:22px 0 8px;font-size:14px}.text-link span{font-size:22px}.hero-bottom{border-top:1px solid var(--line);padding:22px 0}.hero-bottom a{font-size:10px}.hero-bottom a span{margin-left:15px}.section{padding:110px max(7%,calc((100% - 1140px)/2))}.thought{text-align:center;background:#f0f0e9;padding-top:70px;padding-bottom:70px}.questions{font-family:var(--serif);font-size:clamp(1.1rem,1.65vw,1.55rem);line-height:2.2;letter-spacing:.08em}.questions p+p{margin-top:10px}.thought-answer{font:16px/2 var(--serif);margin-top:27px}.thought-answer p+p{margin-top:18px}.vermillion{color:var(--red)}.thought-end{margin:26px auto 0;font-size:13px;line-height:2}.mobile-break{display:none}.section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:52px;gap:30px}.section-head>p{font-size:14px;line-height:2.1;color:#62655e}.works-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:38px 24px}.art-frame{position:relative;background:#efefeb;border:0;width:100%;height:410px;padding:40px;display:flex;justify-content:center;align-items:center;overflow:hidden}.art-frame img{max-height:100%;width:auto;object-fit:contain;mix-blend-mode:multiply;transition:transform .65s cubic-bezier(.2,.7,.2,1)}.art-frame:hover img{transform:scale(1.035)}.art-frame>span{position:absolute;bottom:15px;right:20px;font-size:22px}.work figcaption{display:flex;justify-content:space-between;gap:10px;padding-top:15px;font-size:12px}.work figcaption span:first-child{color:#65685e}.work.wide{grid-column:span 2}.wide .art-frame{background:#e6e2d7}.wide .art-frame img{mix-blend-mode:normal}.more-works{margin-top:45px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}summary{list-style:none}summary::-webkit-details-marker{display:none}.more-works>summary{padding:20px 0;text-align:center;font-size:14px}.more-works>summary span{margin-left:30px}.extra{padding:10px 0 35px;grid-template-columns:repeat(4,1fr)}.extra .art-frame{height:300px;padding:25px}.service{background:#252b27;color:#f1f1e9;text-align:center}.service>.eyebrow{color:#b7bdb1}.section-intro{font-size:15px;margin-top:28px;line-height:2.2}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);text-align:left;margin:60px 0 42px}.service-grid article{padding:0 35px;border-left:1px solid #596057}.service-grid article:first-child{border-left:none;padding-left:0}.service-grid article:last-child{padding-right:0}.index{font:30px var(--serif);color:#bec4b8;display:block;margin-bottom:25px}.service-grid h3{margin-bottom:14px}.service-grid p{color:#cdd1c7;font-size:14px}.button{display:flex;justify-content:space-between;align-items:center;padding:19px 27px;background:var(--ink);color:white;border:1px solid var(--ink);max-width:390px;margin:0 auto;font-size:15px;transition:background .2s}.button:hover{background:var(--red)}.button.light{background:transparent;border-color:#8c9489}.button.light:hover{background:#3e483f}.steps{padding:0;margin:0;list-style:none}.steps li{display:flex;gap:45px;border-top:1px solid var(--line);padding:30px 0}.steps li>span{font:italic 27px Georgia,serif;color:var(--red);padding-top:6px}.steps p{font-size:14px;margin-top:7px;color:#62655e}.estimate{background:#eeeee7;padding:35px 40px;margin-top:20px}.estimate p{font-size:14px;margin-top:12px}.about{border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:12%}.about .large{margin-top:40px;width:60px;height:66px;font-size:36px}.about-body>p{margin-top:22px;font-size:15px;line-height:2.2}.business{margin:35px 0 0;font-size:13px}.business div{display:grid;grid-template-columns:100px 1fr;padding:14px 0;border-top:1px solid var(--line)}.business dd{margin:0;overflow-wrap:anywhere}.faq{background:#f0f0e9;text-align:center}.faq-list{text-align:left;margin-top:50px}.faq-list details{border-bottom:1px solid #cfd1c7}.faq-list summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:25px 0;font-size:16px}.faq-list summary::before{content:'Q';color:var(--red);font:italic 21px Georgia}.faq-list summary span{margin-left:auto}.faq-list p{padding:0 35px 25px;font-size:14px;color:#565c50}details[open]>summary>span{transform:rotate(45deg)}.contact{text-align:center}.contact form{text-align:left;max-width:740px;margin:50px auto 0}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:24px}form label{display:block;font-size:14px;margin-bottom:25px}label em,label small{font:11px var(--sans);margin-left:8px}label em{color:var(--red);font-style:normal}input,textarea,select{display:block;width:100%;border:1px solid #c6c9bd;background:transparent;border-radius:0;padding:13px 15px;margin-top:8px;color:var(--ink);font-size:16px}textarea{resize:vertical}input::placeholder,textarea::placeholder{color:#777b70;font-size:14px}.consent{display:flex;align-items:center;justify-content:center;gap:12px}.consent input{width:18px;height:18px;margin:0;accent-color:var(--red)}.consent a,.form-note a{text-decoration:underline;text-underline-offset:4px}.submit{width:100%}.form-note{text-align:center;font-size:12px;color:#666b5e;margin-top:18px}.honeypot{display:none}.privacy{text-align:left;max-width:740px;margin:45px auto 0;font-size:13px;border-top:1px solid var(--line)}.privacy summary{display:flex;justify-content:space-between;padding:18px 0}.privacy p{font-size:13px}footer{padding:45px 5%;display:flex;align-items:center;justify-content:space-between;gap:25px;border-top:1px solid var(--line)}footer p{font:14px var(--serif)}footer>a:not(.brand),footer>small{font-size:12px}.sr-only,.skip:not(:focus){position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.skip:focus{position:fixed;top:10px;left:10px;z-index:100;background:white;padding:10px}.reveal{opacity:1;transform:none}.motion .reveal{opacity:0;transform:translateY(22px);transition:opacity .85s ease,transform .85s ease}.motion .reveal.visible{opacity:1;transform:none}dialog{border:0;background:var(--paper);padding:50px 45px 25px;max-width:90vw;max-height:90svh;text-align:center}dialog::backdrop{background:#101510d9;backdrop-filter:blur(5px)}dialog img{max-height:65svh;width:auto;margin:auto;object-fit:contain}dialog p{font-size:13px;margin-top:15px}.dialog-close{position:absolute;top:10px;right:15px;background:transparent;border:0;font-size:14px}@keyframes ink-in{from{opacity:0;clip-path:inset(0 0 100% 0)}to{opacity:1;clip-path:inset(0)}}@keyframes copy-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+/* タブレット：文字サイズと余白を段階的に調整。 */
+@media(max-width:1000px){.header nav{gap:20px}.hero{min-height:620px}.hero-stage{grid-template-columns:.5fr 1fr 1.1fr}.hero-copy{padding-left:20px}.hero h1{font-size:4rem}.hero-art img{max-height:460px}.section{padding:80px 6%}.thought{padding:55px 6%}.art-frame{height:350px;padding:30px}.section-head{align-items:start}.section-head>p{max-width:270px}.service-grid article{padding:0 22px}.about{gap:7%}footer{flex-wrap:wrap}.extra{grid-template-columns:repeat(2,1fr)}}
+/* スマートフォン：原画と見出しを並べ、最初の画面で手書きの価値を伝える。 */
+@media(max-width:700px){html{scroll-padding-top:20px}.header{height:80px;padding:0 6%}.brand{font-size:21px;gap:10px}.seal{width:34px;height:39px;font-size:23px}.brand small{font-size:8px}.menu-toggle{display:block;background:none;border:0;font-size:12px;padding:12px 0}.menu-toggle span{font-size:20px;margin-left:10px}.header nav{display:none;position:absolute;left:0;right:0;top:80px;background:var(--paper);padding:20px 6% 30px;border-bottom:1px solid var(--line)}.header nav.open{display:flex;flex-direction:column;align-items:stretch;gap:5px}.hero{height:calc(88svh - 80px);min-height:530px;max-height:700px;padding:18px 6% 0}.hero-overline{font-size:9px}.hero-overline span:last-child{display:none}.hero-stage{grid-template-columns:1fr 1.05fr;padding:24px 0}.vertical-note{display:none}.hero-art{min-height:250px;max-height:390px}.hero-art img{max-height:370px;width:100%;height:100%;object-fit:contain}.art-seal{right:2%;bottom:10%;font-size:11px}.hero-copy{padding-left:23px}.hero-copy>.eyebrow{font-size:11px;margin-bottom:14px;letter-spacing:.08em}.hero h1{font-size:clamp(2.4rem,8.6vw,3.6rem);line-height:1.65;letter-spacing:.06em;margin:0 0 18px}.hero-copy p{font-size:11px;line-height:2}.text-link{font-size:11px;gap:10px;padding-top:22px;white-space:nowrap}.hero-bottom{font-size:9px;letter-spacing:.03em;gap:15px;padding:18px 0}.hero-bottom>span:last-child{display:none}.hero-bottom a{font-size:8px;white-space:nowrap}.hero-bottom a span{margin-left:5px}.section{padding:65px 6%}.thought{padding:45px 6%}.eyebrow{font-size:10px;margin-bottom:18px}.questions{font-size:1rem;letter-spacing:.02em;line-height:1.85}.questions p+p{margin-top:15px}.mobile-break{display:block}.thought-answer{font-size:13px;line-height:1.9;margin-top:23px}.thought-answer p+p{margin-top:15px}.thought-end{font-size:11px;margin-top:24px}.thought-end p+p{margin-top:10px}.section-head{display:block;margin-bottom:32px}.section-head>p{margin-top:22px;max-width:none;font-size:13px}.works-grid{grid-template-columns:1fr 1fr;gap:25px 16px}.art-frame{height:290px;padding:25px}.work.wide{grid-column:span 1}.work figcaption{display:block;font-size:10px}.work figcaption span{display:block}.work:last-child:not(.extra .work){grid-column:span 2}.works-grid>.work:last-child .art-frame{height:330px}.extra{grid-template-columns:1fr 1fr}.extra .art-frame{height:260px}.section-intro{font-size:14px}.section-intro br{display:none}.service-grid{grid-template-columns:1fr;margin:35px 0}.service-grid article,.service-grid article:first-child,.service-grid article:last-child{padding:25px 0;border-left:0;border-top:1px solid #596057}.index{font-size:24px;margin-bottom:14px}.service-grid p{font-size:14px}.steps li{gap:25px;padding:25px 0}.steps h3{font-size:1.1rem}.estimate{padding:25px}.estimate p br{display:none}.about{grid-template-columns:1fr;gap:35px}.about-title{position:relative}.about .large{position:absolute;right:10px;bottom:8px;width:48px;height:54px;margin:0}.about-body>p{font-size:14px}.faq-list{margin-top:30px}.faq-list summary{font-size:14px;gap:15px;padding:22px 0}.faq-list p{padding:0 10px 22px}.form-row{grid-template-columns:1fr;gap:0}.contact form{margin-top:35px}.button{font-size:14px}footer{padding:35px 6%;display:grid;grid-template-columns:1fr 1fr}footer p{font-size:12px}footer>a:not(.brand){font-size:11px}footer small{text-align:right}dialog{padding:50px 20px 20px}}
+/* 動きを減らす設定では、全内容を最初から表示。 */
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.motion .reveal{opacity:1;transform:none}}
+
+/* H1にサービスの検索語を含め、見出しの補足として読みやすく表示。 */
+.hero-subtitle{display:block;font:14px/2 var(--sans);letter-spacing:0;white-space:normal;margin-top:24px}.hero h1{margin-bottom:0}@media(max-width:700px){.hero-subtitle{font-size:12px;margin-top:18px}}
+
+/* 修正：最後の二行を除き、問いかけ本文の行高と段落間を従来の1.5倍にする。 */
+.questions { line-height: 3.3; }
+.questions p + p { margin-top: 15px; }
+.thought-answer { line-height: 3; margin-top: 40.5px; }
+.thought-answer p + p { margin-top: 27px; }
+/* 右端の表記削除後もスクロール案内は中央に配置。 */
+.hero-bottom { display: grid; grid-template-columns: 1fr auto 1fr; }
+.hero-bottom > a { grid-column: 2; }
+/* 指定改行をスマートフォンでも維持する。 */
+#service > .section-intro br, #contact > .section-intro br { display: initial; }
+@media (max-width: 700px) {
+  .questions { line-height: 2.775; }
+  .questions p + p { margin-top: 22.5px; }
+  .thought-answer { line-height: 2.85; margin-top: 34.5px; }
+  .thought-answer p + p { margin-top: 22.5px; }
+  /* 小画面でも作品説明を画像の左に残す。縦書きで幅を抑える。 */
+  .hero-stage { position: relative; padding-left: 36px; }
+  .vertical-note { display: block; position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 10px; line-height: 1.7; letter-spacing: .12em; }
+  .hero-copy { padding-left: 15px; }
+  .hero h1 { font-size: clamp(2rem, 7.8vw, 3.3rem); }
+  .hero-bottom { grid-template-columns: 1fr auto; }
+  .text-link { white-space: normal; }
+  select { font-size: 14px; }
+}
+
+
+/* 六作品を均等表示。追加表示は三作品。櫂の写真は原画の色を保持。 */
+.extra { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+[data-image="5"] img { mix-blend-mode: normal; }
+@media(max-width:700px) {
+  .works-grid > .work:last-child { grid-column: auto; }
+  .works-grid:not(.extra) > .work:last-child .art-frame { height: 290px; }
+  .extra { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* 2026-09-16：添付のブランド原稿を比率を保って表示する。 */
+.brand { gap: 13px; }
+.brand-mark { width: 44px; height: 46px; object-fit: contain; mix-blend-mode: multiply; }
+.brand-type { width: 150px; height: auto; mix-blend-mode: multiply; }
+/* 作品を左寄りに。説明は用途表記と同じサイズで、作品の下端にそろえる。 */
+.hero-stage { grid-template-columns: .65fr 1.25fr 1.35fr; }
+.hero-art { justify-content: flex-start; }
+.vertical-note { align-self: end; font-size: 12px; margin-bottom: 12px; }
+.mobile-only { display: none; }
+.thought-end { margin-top: 39px; }
+@media (max-width: 1000px) and (min-width: 701px) {
+  .hero-stage { grid-template-columns: .4fr 1fr 1.15fr; }
+}
+@media (max-width: 700px) {
+  .brand { gap: 9px; }
+  .brand-mark { width: 32px; height: 34px; }
+  .brand-type { width: 120px; }
+  .hero-stage { grid-template-columns: 1fr 1.05fr; }
+  .vertical-note { top: auto; bottom: 24px; transform: none; margin-bottom: 0; font-size: 9px; }
+  .mobile-only { display: inline; }
+  .hero-subtitle { white-space: nowrap; font-size: clamp(10px, 2.8vw, 12px); }
+  /* 問いかけの三文を各一行に。幅320pxでも読み切れるサイズに調整。 */
+  .questions { font-size: clamp(9px, 2.6vw, 14px); white-space: nowrap; letter-spacing: 0; }
+  .questions .mobile-break { display: none; }
+  .thought-end { margin-top: 36px; }
+}
+
+/* 読む速度に合わせ、各文が視野へ入った時に一度だけ現れる。 */
+#thought > .eyebrow { margin-bottom: 33px; }
+.thought-answer .thought-line { display: block; }
+.thought-pause { width: 1px; height: 120px; margin: 45px auto; background: #909487; }
+.thought-answer { margin-top: 0; }
+.motion .thought-line { opacity: 0; transform: translateY(16px); transition: opacity 1s ease, transform 1s ease; }
+.motion .thought-line.visible { opacity: 1; transform: none; }
+/* 最終作品だけ横に広がる旧指定を解除し、六作品の背景を縦長で統一。 */
+#works > .works-grid > .work { grid-column: auto; min-width: 0; }
+#works > .works-grid > .work > .art-frame { height: auto; aspect-ratio: 3 / 4; }
+.about-mark { width: 60px; height: 66px; object-fit: contain; margin-top: 40px; mix-blend-mode: multiply; }
+@media(max-width:700px) {
+  #thought > .eyebrow { margin-bottom: 27px; }
+  .questions { font-size: 16px; white-space: normal; line-height: 2; letter-spacing: .02em; }
+  .questions .mobile-break { display: block; }
+  .thought-answer { font-size: 14px; margin-top: 0; }
+  .thought-pause { height: 120px; margin: 40px auto; }
+  .about-mark { position: absolute; right: 10px; bottom: 8px; width: 48px; height: 54px; margin: 0; }
+  /* スマホのフッターロゴだけ縦横80%。ヘッダーのサイズは維持。 */
+  footer { grid-template-columns: max-content minmax(0, 1fr); column-gap: 12px; }
+  footer .brand { gap: 7.2px; }
+  footer .brand-mark { width: 25.6px; height: 27.2px; }
+  footer .brand-type { width: 96px; }
+  footer > p { white-space: nowrap; justify-self: end; }
+}
+@media(max-width:359px) {
+  /* 最小端末ではキャッチコピーを独立行にして、文中の折り返しを防止。 */
+  footer > p { grid-column: 1 / -1; justify-self: start; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .motion .thought-line { opacity: 1; transform: none; transition: none; }
+}
+
+/* PCのみ（1001px以上）：思いの後半を140%に、追加作品も通常作品と同じ枠・余白に揃える。 */
+@media (min-width: 1001px) {
+  .thought-answer { font-size: 22.4px; } /* 元の16px × 1.4 */
+  .thought-end { font-size: 14.56px; } /* 直前の18.2pxから20%縮小（×0.8）。PCのみ。 */
+  #works .extra .art-frame { height: auto; aspect-ratio: 3 / 4; padding: 40px; }
+}
+
+/* 2026-10-05：指定箇所だけの文言差し替え。上部の空間と他セクションは維持。 */
+.hero-overline-empty { min-height: 1.9em; }
+.hero-copy > .hero-tagline { font-family: var(--serif); font-size: 14px; }
+#thought .questions .thought-line { display: block; }
+#thought .thought-copy-body { margin-top: 2em; }
+#thought .thought-copy-close { margin-top: 2em; }
+@media(max-width:700px) {
+  .hero-copy > .hero-tagline { font-size: clamp(10px, 2.8vw, 12px); }
+}
