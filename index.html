@@ -71,6 +71,34 @@
   ]
 }
 </script>
+
+<style>
+  /* 「私たちの思い」の文字サイズだけを調整。
+     太字と本文の比率は、常に4：3を維持します。 */
+  #thought {
+    --thought-heading-size: clamp(20px, 2.4vw, 24px);
+  }
+
+  /* 冒頭の太字：スマホ・タブレット20〜24px */
+  #thought .questions,
+  #thought .questions > p {
+    font-size: var(--thought-heading-size);
+  }
+
+  /* その下の本文：スマホ・タブレット15〜18px */
+  #thought .thought-copy-body,
+  #thought .thought-copy-body > p {
+    font-size: calc(var(--thought-heading-size) * 0.75);
+  }
+
+  /* PC：太字24px・本文18px */
+  @media (min-width: 1001px) {
+    #thought {
+      --thought-heading-size: 24px;
+    }
+  }
+</style>
+
 </head>
 <body>
 <a class="skip" href="#main">本文へ移動</a>
